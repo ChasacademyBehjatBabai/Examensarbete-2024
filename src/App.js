@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
+import homepage from './pics/home-page.svg'
+import homepagePatient from './pics/home-page-patient.svg'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="container">
+
+          <section className="section unverified-patient">
+              <h1>Unverified patient</h1>
+              <img src={homepage} alt="Landing page start booking"/>
+          </section>
+
+
+          <section className="section verified-patient">
+              <h1>Verified patient</h1>
+              <img src={homepagePatient} alt="Landing page for members"/>
+          </section>
+
+      </div>
   );
 }
 
